@@ -1,0 +1,92 @@
+#cursos-lecionados{ /* Section */
+  width: 100%;
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cursos-1{ /* Abarca um curso com imagem retangular e outro com imagem quadrada */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+#cursos-2{ /* Idem */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+.curso{ /* Divs dos cursos em si */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  gap: 18px;
+  padding: 20px;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+}
+.imagens-quadradas{
+  height: 341.2px;
+  width: 341.2px;
+  border-radius: 20px;
+}
+.imagens-retangulares{
+  height: 361.2px;
+  width: 635px;
+  border-radius: 20px;
+}
+.imagens-responsividade{ /* Imagens retangulares se tornam quadradas na responsividade */
+  display: none;
+}
+
+@media screen and (max-width: 1170px){
+  #cursos-1, #cursos-2{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .curso{
+    width: calc(50% - 12px);
+  }
+  .imagens-retangulares{
+    display: none;
+  }
+  .imagens-responsividade{ 
+    display: flex;
+    height: 341.2px;
+    width: 341.2px;
+    border-radius: 20px;
+  }
+  .curso img{
+    height: 80%;
+    width:  80%;
+  }
+  .titulo-secao, .subtitulo-secao{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px){
+  #cursos-1, #cursos-2{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .curso{
+    width: calc(100% - 12px);
+  }
+  .imagens-retangulares{
+    display: none;
+  }
+  .imagens-responsividade{ 
+    display: flex;
+    height: 341.2px;
+    width: 341.2px;
+    border-radius: 20px;
+  }
+  .titulo-secao, .subtitulo-secao{
+    text-align: center;
+  }
+}

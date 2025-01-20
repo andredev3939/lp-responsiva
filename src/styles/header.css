@@ -1,0 +1,36 @@
+header{
+  width: 100%;
+  padding: 28px 8%;
+  position: sticky; /* Header fixo mesmo quando scrolla */
+  top: 0; /* Fica em cima */
+  background-color: #fff9ea;
+  z-index: 3; /* Para aparecer por cima dos demais z-index*/
+}
+#barra-navegacao{
+  width: 100%;
+  display: flex; /* row  */
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-logo{
+  font-size:24px;
+  color: rgb(11, 83, 69);
+}
+#nav-lista{
+  display: flex; /* row */
+  list-style: none; /* Retira bolinhas */
+  gap: 48px; /* Espaçamento */
+}
+.nav-itens a{ /* Início */
+  text-decoration: none; /* Retira o traçado em baixo */
+  color: rgb(55, 66, 59);
+  font-weight: 600;
+
+}
+#btn-mobile{
+  display: none;
+}
+#menu-mobile{
+  display: none;
+}
+

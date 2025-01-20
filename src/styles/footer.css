@@ -1,0 +1,22 @@
+footer{
+  background-color: rgb(15, 156, 105);
+  padding: 20px 0;
+
+}
+
+footer .btn-padrao{
+  margin-top: 10px
+}
+
+#itens-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8% 24px 8%;
+  align-items: center;
+  z-index: 1; /* Garante que o conteúdo esteja acima da wave */
+}
+#direitos-autorais{
+  color: #1d1d1d;
+  font-weight: 500;
+}
+

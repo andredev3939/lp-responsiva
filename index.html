@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Usando framework Font Awesome para ícones (trabalha com classes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Ícone-->
+  <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/svgs/solid/music.svg" type="image/svg+xml">
+  <!-- Arquivo CSS geral, onde há folhas de estilo e também importação dos demais arquivos CSS -->
+  <link rel="stylesheet" href="./src/styles/geral.css">
+  <!-- Arquivo CSS contendo as media queries de responsividade -->
+  <link rel="stylesheet" href="./src/styles/responsividade.css">
+  <title> EMBach - Escola de Música Bach  </title>
+</head>
+<body>
+  <!-- Atentar para as posições das tags, pois influencia no modelo de caixas -->
+  <header>
+    <!-- Menu Desktop -->
+    <nav id="barra-navegacao">
+      <i class="fa-solid fa-music" id="nav-logo">EMBach </i>
+      <ul id="nav-lista">
+        <li class="nav-itens active">
+          <a href="#inicio">Início</a>
+        </li>
+        <li class="nav-itens">
+          <a href="#cursos-lecionados">Cursos</a>
+        </li>
+        <li class="nav-itens">
+          <a href="#somos">Nossa identidade</a>
+        </li>
+      </ul>
+        <button class="btn-padrao"><a href="https://wa.link/z5bt5y">Entre em contato</a></button>
+        <!-- Botão que vai indicar os itens da navbar no mobile (escondido com CSS pra desktop) -->
+        <button id="btn-mobile" class="fa-solid fa-bar"> 
+          <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav> 
+        <!-- Menu Mobile -->
+      <div id="menu-mobile">
+        <ul id="nav-lista-mobile">
+          <li class="nav-itens">
+            <a href="#inicio">Início</a>
+          </li>
+          <li class="nav-itens">
+            <a href="#cursos">Cursos</a>
+          </li>
+          <li class="nav-itens">
+            <a href="#avaliacoes">Avaliações</a>
+          </li>
+        </ul>
+        <button class="btn-padrao">Entre em contato</button>
+      </div>
+  </header>
+  <main id="conteudo">
+    <section id="inicio">
+      <div class="forma"></div>
+      <div id="chamada-acao">
+        <h1 class="titulo"> Desperte o Músico que Existe em <span>Você</span></h1>
+        <p class="descricao">Domine técnica, explore interpretação e potencialize sua vocação musical conosco. Aprenda um instrumento e evolua aqui!</p>
+        <div id="botoes-cta">
+          <a href="#cursos-lecionados" class="btn-padrao">Ver cursos</a>
+          <a href="tel:+5513992054250" id="btn-telefone">
+            <button class="btn-padrao">
+              <i class="fa-solid fa-phone"></i>
+            </button> +55 13 99205-4250
+          </a>
+        </div>
+        <div class="btn-redes-sociais">
+          <a href="https://wa.link/z5bt5y">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/felipe_csantos01/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/andr%C3%A9-felipe-carvalho-dos-santos-206589313/">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+      <div id="banner">
+        <img src="./src/images/baixo2.jpg" alt="Mulher tocando Baixo" id="musicista-baixo">
+        <img src="./src/images/violao.jpg" alt="Homem tocando Violão" id="musico-violao">
+      </div>
+      <!-- Exibido na responsividade quando o banner acima é removido -->
+      <div id="banner-trompetista">
+        <img src="./src/images/trompete.jpg" alt="Hoem tocando Trompete" id="musico-trompete">
+      </div>
+    </section>
+    <section id="cursos-lecionados">
+      <h2 class="titulo-secao"> Desenvolvimento Musical Prático e Embasado</h2>
+      <h3 class="subtitulo-secao">Aprofunde-se na técnica e na expressão musical.</h3>
+      <div id="cursos-1">
+        <div class="curso">
+          <img src="./src/images/img-quadrada-1.jpg" id="pianista" class="imagens-quadradas">
+          <h3 class="titulo-curso">Prática de Instrumento</h3>
+          <p class="descricao-cursos">Este curso oferece ensino personalizado para diversos instrumentos musicais, com aulas que abrangem técnicas específicas, métodos aplicada, repertório e interpretação. As atividades são estruturadas para atender desde iniciantes até músicos em níveis avançados, garantindo um aprendizado sólido.</p>
+        </div>
+        <div class="curso">
+          <img src="./src/images/img-retangular-1.jpg" id="conjunto-cordas" class="imagens-retangulares"> 
+          <img src="./src/images/responsividade-1.png" alt="" class="imagens-responsividade"> <!-- Escondidas no desktop e visíveis na responsividade-->
+          <h3 class="titulo-curso">Prática de Conjunto</h3>
+          <p class="descricao-cursos">A Prática de Conjunto promove o trabalho em equipe por meio de formações como orquestras, conjuntos de câmara e bandas. As atividades incluem interpretação de arranjos, interação musical entre os integrantes e desenvolvimento de habilidades técnicas e colaborativas para performances em grupo.</p>
+        </div>
+      </div>
+      <div id="cursos-2">
+        <div class="curso">
+          <img src="./src/images/img-quadrada-2.jpg" id="coral" class="imagens-quadradas">
+          <h3 class="titulo-curso">Canto Solo e Coral</h3>
+          <p class="descricao-cursos">O curso de Canto Solo desenvolve técnicas vocais, respiração e interpretação para aprimorar habilidades como solista. No Coral, o foco está na harmonização de vozes em grupo e na prática de apresentações coletivas, proporcionando experiências enriquecedoras tanto no aspecto técnico quanto artístico.</p>
+        </div>
+        <div class="curso">
+          <img src="./src/images/img-retangular-2.jpg" id="conjunto-popular" class="imagens-retangulares">
+          <img src="./src/images/responsividade-2.png" alt="" class="imagens-responsividade"> <!-- Escondidas no desktop e visíveis na responsividade-->
+          <h3 class="titulo-curso">Música Folclórica e Popular</h3>
+          <p class="descricao-cursos">O curso abrange a diversidade e a riqueza da música folclórica e popular, com foco em ritmos, melodias e técnicas típicas de gêneros como Bossa Nova, Choro, Sertanejo, Jazz, Folk, Rock, Country e Bluegrass. As aulas exploram a tradição musical de diferentes culturas, ampliando o conhecimento e o repertório musical.</p>
+        </div>
+      </div>
+    </section>
+    <section id="somos">
+      <div id="somos-titulo-subtitulo">
+        <h2 class="titulo-secao">Cultivando Talentos, Inspirando Sonhos </h2>
+        <h3 class="subtitulo-secao">Unindo tradição e modernidade na formação de músicos e artistas.</h3>
+      </div>
+      <div id="somos-img-texto">
+        <img src="./src/images/predio-embach.png" alt="Prédio da Escola de Música Bach">
+        <p>
+         A EMBach é um espaço único no litoral paulista, onde a paixão pela música e a criatividade florescem. Inspirada por Bach, nossa instituição privada e sem fins lucrativos oferece uma formação musical completa e gratuita, abrangendo desde a música clássica até o folclore e a música popular brasileira.<br>
+         Com salas equipadas e ambientes acústicos perfeitos, nossos alunos exploram uma ampla gama de instrumentos, do piano ao violão, e participam de grupos como a Orquestra Bachiana e o Coral Vozes do Mar, desenvolvendo sua musicalidade e interação com outros músicos.<br>
+         A EMBach é reconhecida por revelar grandes talentos que brilham em orquestras e produções musicais pelo país. Nossa proposta pedagógica, aliada à paixão dos professores, forma músicos capazes de interpretar e criar novas sonoridades que enriquecem a cultura musical brasileira.<br>
+         Além da formação técnica, oferecemos um ambiente acolhedor, com projetos como o Festival de Música de Câmara e oficinas de música popular brasileira, ampliando os horizontes artísticos dos alunos.<br>
+         Venha fazer parte da família EMBach e descubra o poder transformador da música!
+       </p>
+      </div>
+    </section>
+  </main>
+  <!-- Footer usando SVG -->
+  <footer>
+    <div id="itens-footer">
+      <span id="direitos-autorais">&copy 2024 André Felipe, Desenvolvedor de Software </span>
+      <div class="btn-redes-sociais">
+        <a href="https://wa.link/z5bt5y">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/felipe_csantos01/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/andr%C3%A9-felipe-carvalho-dos-santos-206589313/">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Importando JavaScript (sempre deixar por último, pois o DOM como um todo
+    deve carregar antes do script) -->
+  <script src="./src/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* CSS1 - INÍCIO */
+@media screen and (max-width:1410px) {
+  /* Retirar imagem e div da forma abaixo de 1410px e adiciona o banner do trompetista */
+  #inicio {
+    min-height: 100%;
+    padding-top: 0px;
+  }
+  #banner,
+  #banner img,
+  #inicio .forma {
+    display: none;
+  }
+  #banner-trompetista {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+  }
+  #banner-trompetista img { 
+    height: 100%;
+    width: fit-content; 
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  #chamada-acao {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* CSS2 - IDENTIDADE */
+@media screen and (max-width:450px) {
+  /* Retira o botão de telefone abaixo de 450px e deixa o título e subtítulo da identidade menores*/
+  #btn-telefone {
+    display: none;
+  }
+}
+
+/* CSS3 - HEADER */
+@media screen and (max-width:1170px) {
+  /* Esconde a navbar e o botão desktop e revela o botão mobile */
+  #nav-lista,
+  #barra-navegacao .btn-padrao {
+    display: none;
+    opacity: 0;
+  }
+  #btn-mobile { /* Botão de três barrinhas horizontais (conteúdo aparece via JavaScript) */
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Recebe a classe active via JavaScript mediante o clique no botão de três barrinhas horizontais e exibe o menu mobile */
+  #menu-mobile.active, #menu-mobile.active * { /* Seleciona a div e os filhos dessa div */
+    display: flex;
+    flex-direction: column; /* Eixo X */
+    align-items: center; /* Conteúdo no eixo inverso */
+  }
+  #nav-lista-mobile {
+    gap: 12px;
+    margin: 12px 0px;
+  }
+  #banner-trompetista, #banner-trompetista img { /* Retira o trompetista abaixo de 1170px*/
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  #chamada-acao {
+    width: 100%;
+  }
+}
+
+/* CSS3 - HEADER */
+@media screen and (max-width:745px) {
+  /* Centraliza a div tendo retirado o banner do trompetista */
+  .btn-redes-sociais {
+    justify-content: center;
+    gap: 10px; 
+    flex-wrap: wrap; 
+  }
+
+  .btn-redes-sociais a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+/* CSS1 - INÍCIO */
+@media screen and (max-width:1410px) {
+  #chamada-acao {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center; /* Garante que o conteúdo será centralizado com a saída do banner do trompetista */
+    max-width: none; /* Remove a largura máxima que está sendo aplicada */
+  }
+
+  #chamada-acao .titulo {
+    font-size: 3rem; /* Ajusta o tamanho do título para a responsividade */
+  }
+
+  #chamada-acao .descricao {
+    font-size: 1rem; /* Ajusta a descrição para telas menores */
+  }
+
+  #botoes-cta {
+    justify-content: center; /* Centraliza os botões */
+    gap: 20px; /* Ajusta o espaçamento entre os botões */
+  }
+}
+
+/* CSS4 - GERAL */
+@media screen and (max-width:1280px) {
+  #somos {
+    flex-direction: column;
+  }
+  #somos .subtitulo-secao {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #somos-img-texto img {
+    display: none;
+  }
+}
+
+/* CSS5 - CURSOS */
+@media screen and (max-width:1170px) {
+  #cursos-1, #cursos-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .curso {
+    width: calc(50% - 12px);
+  }
+  .imagens-retangulares {
+    display: none;
+  }
+  .imagens-responsividade { 
+    display: flex;
+    height: 341.2px;
+    width: 341.2px;
+    border-radius: 20px;
+  }
+  .curso img {
+    height: 80%;
+    width:  80%;
+  }
+  .titulo-secao, .subtitulo-secao {
+    text-align: center;
+  }
+}
+
+/* CSS5 - CURSOS */
+@media screen and (max-width:600px) {
+  #cursos-1, #cursos-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .curso {
+    width: calc(100% - 12px);
+  }
+  .imagens-retangulares {
+    display: none;
+  }
+  .imagens-responsividade { 
+    display: flex;
+    height: 341.2px;
+    width: 341.2px;
+    border-radius: 20px;
+  }
+  .titulo-secao, .subtitulo-secao {
+    text-align: center;
+  }
+}
+
+/*Responsividade do footer */
+@media screen  and (max-width:600px) {
+  #itens-footer{
+    flex-direction: column;
+    gap: 20px;
+  }
+}  
